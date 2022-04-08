@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,10 +30,82 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div id="hour-9" class="row time-block">
+        <div class="hour col-md-1">
+          9 AM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-10" class="row time-block">
+        <div class="hour col-md-1">
+          10 AM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-11" class="row time-block">
+        <div class="hour col-md-1">
+          11 AM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-12" class="row time-block">
+        <div class="hour col-md-1">
+          12 PM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-13" class="row time-block">
+        <div class="hour col-md-1">
+          1 PM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-14" class="row time-block">
+        <div class="hour col-md-1">
+          2 PM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-15" class="row time-block">
+        <div class="hour col-md-1">
+          3 PM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-16" class="row time-block">
+        <div class="hour col-md-1">
+          4 PM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
+      <div id="hour-17" class="row time-block">
+        <div class="hour col-md-1">
+          5 PM
+        </div>
+        <textarea id="task-input" class="col-md-10 description">
+        </textarea>
+        <button id="save" class="btn saveBtn col-md-1"><i class="bi bi-save"></i></button>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
