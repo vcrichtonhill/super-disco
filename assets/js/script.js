@@ -1,8 +1,3 @@
-
-// greyed out for past, red present, green future (use classes)
-    // click on block --> enter an event
-    // save in local storage
-
 var saveBtn = $(".saveBtn")
 var taskInput = document.getElementById("task-input")
 var currentDay = document.getElementById("currentDay")
@@ -14,10 +9,6 @@ let taskStorage = localStorage.getItem("taskInput")
     JSON.stringify(localStorage.getItem("taskInput"))
 
 saveBtn.on("click", function(){
-    // taskStorage.push(taskInput.value.trim());
-    // localStorage.setItem("taskInput", JSON.stringify(taskStorage));
-    // listBuilder(taskInput.value);
-    // taskInput.value = "";
     var activity = $(this).siblings(".description").val()
     var hourKey = $(this).parent().attr("id")
     localStorage.setItem(hourKey, activity)
@@ -37,10 +28,3 @@ $(".time-block").each(function(row){
         $(this).addClass("future")
     }
 })
-// if (hour is after moment().format('LT');) {
-//     assign class past
-// } else if {
-//     assign class present
-// } else {
-//     assign class future
-// }
